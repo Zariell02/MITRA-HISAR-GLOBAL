@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mitra HisarGlobal V4 - Static Website
 
 Versi V4 website statis promosi/konsultasi paket Umrah & Haji untuk mitra HisarGlobal.
@@ -33,3 +34,6 @@ Buka `data/packages.json`. Ubah judul, harga, durasi, fitur, dan pesan WhatsApp.
 
 ## Catatan
 Untuk versi publik, gunakan data valid. Jangan memakai testimoni palsu, legalitas tanpa bukti, atau klaim sebagai penyelenggara utama jika client hanya mitra.
+=======
+# MITRA-HISAR-GLOBAL
+>>>>>>> d0a3e440fadb4c3f6a93279de63f6aa8036010d0
