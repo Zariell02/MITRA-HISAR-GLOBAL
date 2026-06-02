@@ -172,3 +172,127 @@
     justify-content: center;
   }
 }
+
+/* =========================================================
+   PREMIUM ISLAMIC SOFT BACKGROUND
+   Background website agar tidak putih polos,
+   tetap clean, premium, dan mudah dibaca.
+========================================================= */
+
+body {
+  background:
+    radial-gradient(
+      circle at 8% 8%,
+      rgba(43, 110, 168, 0.16),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(242, 184, 75, 0.12),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 50% 88%,
+      rgba(11, 45, 92, 0.08),
+      transparent 30rem
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #eef7ff 42%,
+      #fffaf0 100%
+    );
+  background-attachment: fixed;
+}
+
+/* Pattern islami halus */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(
+      30deg,
+      rgba(11, 45, 92, 0.035) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(11, 45, 92, 0.035) 87.5%,
+      rgba(11, 45, 92, 0.035)
+    ),
+    linear-gradient(
+      150deg,
+      rgba(11, 45, 92, 0.035) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(11, 45, 92, 0.035) 87.5%,
+      rgba(11, 45, 92, 0.035)
+    ),
+    linear-gradient(
+      30deg,
+      rgba(11, 45, 92, 0.035) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(11, 45, 92, 0.035) 87.5%,
+      rgba(11, 45, 92, 0.035)
+    ),
+    linear-gradient(
+      150deg,
+      rgba(11, 45, 92, 0.035) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(11, 45, 92, 0.035) 87.5%,
+      rgba(11, 45, 92, 0.035)
+    );
+  background-size: 72px 126px;
+  background-position:
+    0 0,
+    0 0,
+    36px 63px,
+    36px 63px;
+}
+
+/* Layer cahaya lembut agar background tidak terlalu datar */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.68) 0%,
+      rgba(255, 255, 255, 0.32) 42%,
+      rgba(255, 255, 255, 0.58) 100%
+    );
+}
+
+/* Section umum dibuat transparan lembut agar menyatu */
+.section-sm,
+.section {
+  position: relative;
+}
+
+/* Card dibuat sedikit glassmorphism agar background tetap terasa */
+.panel,
+.contact-box,
+.detail-card,
+.package-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(220, 234, 247, 0.86);
+}
+
+/* Footer tetap solid agar kontras dan profesional */
+.site-footer {
+  background:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(242, 184, 75, 0.14),
+      transparent 22rem
+    ),
+    linear-gradient(135deg, #07172f 0%, #0a1d3a 56%, #0b2d5c 100%);
+}
