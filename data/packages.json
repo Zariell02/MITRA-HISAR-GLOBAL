@@ -1,0 +1,112 @@
+[
+  {
+    "id": "umrah-reguler",
+    "title": "Umrah Reguler",
+    "tag": "Populer",
+    "category": "Umrah Reguler",
+    "duration": "9 Hari",
+    "hotel": "Hotel *3",
+    "departure": "Setiap Bulan",
+    "price": 31600000,
+    "priceLabel": "Mulai Rp31.600.000",
+    "image": "assets/images/packages/shop-1.webp",
+    "summary": "Pilihan program umrah reguler untuk calon jamaah yang membutuhkan jadwal fleksibel.",
+    "features": [
+      "Tiket pesawat PP sesuai paket",
+      "Hotel Makkah dan Madinah",
+      "Visa umrah",
+      "Transportasi bus AC",
+      "Manasik dan pembimbing ibadah"
+    ],
+    "notes": "Harga, jadwal, fasilitas, dan seat perlu dikonfirmasi kembali melalui admin mitra.",
+    "whatsappText": "Assalamu'alaikum, saya tertarik dengan Paket Umrah Reguler. Mohon info jadwal, fasilitas, biaya, dan syarat pendaftarannya."
+  },
+  {
+    "id": "umrah-plus-turki",
+    "title": "Umrah Plus Turki",
+    "tag": "Favorit",
+    "category": "Umrah Plus",
+    "duration": "12 Hari",
+    "hotel": "Hotel *4",
+    "departure": "Jan, Feb, Apr, Jul, Okt",
+    "price": 38900000,
+    "priceLabel": "Mulai Rp38.900.000",
+    "image": "assets/images/packages/shop-2.webp",
+    "summary": "Program umrah plus dengan destinasi tambahan Turki sesuai itinerary penyelenggara.",
+    "features": [
+      "Tiket pesawat PP sesuai program",
+      "Visa sesuai ketentuan",
+      "Hotel dan transportasi",
+      "City tour sesuai itinerary",
+      "Pembimbing ibadah"
+    ],
+    "notes": "Itinerary, hotel, dan maskapai mengikuti brosur resmi penyelenggara.",
+    "whatsappText": "Assalamu'alaikum, saya tertarik dengan Paket Umrah Plus Turki. Mohon info itinerary, jadwal, fasilitas, dan biaya."
+  },
+  {
+    "id": "program-haji-khusus",
+    "title": "Program Haji Khusus",
+    "tag": "Eksklusif",
+    "category": "Haji Khusus",
+    "duration": "40 Hari",
+    "hotel": "Hotel *4",
+    "departure": "Dijadwalkan",
+    "price": 0,
+    "priceLabel": "Konsultasi Admin",
+    "image": "assets/images/packages/shop-3.webp",
+    "summary": "Informasi awal program haji khusus melalui jalur konsultasi mitra.",
+    "features": [
+      "Konsultasi prosedur awal",
+      "Informasi estimasi biaya",
+      "Arahan dokumen",
+      "Rujukan ke penyelenggara resmi"
+    ],
+    "notes": "Pendaftaran resmi haji khusus harus mengikuti ketentuan PIHK/penyelenggara resmi.",
+    "whatsappText": "Assalamu'alaikum, saya ingin konsultasi Program Haji Khusus. Mohon info prosedur, estimasi biaya, dan persyaratan awal."
+  },
+  {
+    "id": "umroh-hebat",
+    "title": "Umroh Hebat",
+    "tag": "Rekomendasi",
+    "category": "Umrah Reguler",
+    "duration": "13 Hari",
+    "hotel": "Hotel *4",
+    "departure": "30 Juni 2026",
+    "price": 31600000,
+    "priceLabel": "Mulai Rp31.600.000",
+    "image": "assets/images/packages/shop-4.webp",
+    "summary": "Paket umrah dengan jadwal dan fasilitas yang dapat disesuaikan berdasarkan ketersediaan.",
+    "features": [
+      "Tiket PP",
+      "Visa umrah",
+      "Hotel sesuai paket",
+      "Makan sesuai paket",
+      "Transportasi",
+      "Pembimbing ibadah"
+    ],
+    "notes": "Detail paket mengikuti update terbaru penyelenggara.",
+    "whatsappText": "Assalamu'alaikum, saya tertarik dengan Paket Umroh Hebat 30 Juni 2026. Mohon info lengkapnya."
+  },
+  {
+    "id": "kemilau-dubai",
+    "title": "Kemilau Dubai",
+    "tag": "Plus",
+    "category": "Umrah Plus",
+    "duration": "10 Hari",
+    "hotel": "Hotel *4",
+    "departure": "18 Juli 2026",
+    "price": 32900000,
+    "priceLabel": "Mulai Rp32.900.000",
+    "image": "assets/images/packages/shop-5.webp",
+    "summary": "Program umrah plus dengan rangkaian destinasi Dubai sesuai itinerary.",
+    "features": [
+      "Tiket PP",
+      "Hotel sesuai paket",
+      "Transportasi",
+      "Tour Dubai sesuai program",
+      "Pembimbing ibadah"
+    ],
+    "notes": "Pastikan itinerary dan fasilitas dikonfirmasi ulang ke admin.",
+    "whatsappText": "Assalamu'alaikum, saya tertarik dengan Paket Kemilau Dubai. Mohon info itinerary dan biaya lengkapnya."
+  }
+]
