@@ -23,7 +23,7 @@ Buka: `http://localhost:8000`
 Buka `js/main.js`, lalu ganti:
 
 ```js
-whatsappNumber: "6281234567890"
+whatsappNumber: "62xxxxxx"
 ```
 
 Gunakan format 62, bukan 0.
