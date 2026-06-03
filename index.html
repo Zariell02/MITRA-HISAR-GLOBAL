@@ -14,11 +14,11 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Mitra HisarGlobal | Paket Umrah & Haji Sesuai Budget</title>
+    <title>Mitra HisarGlobal | Paket Umrah & Haji, Cek Seat & Harga</title>
 
     <meta
       name="description"
-      content="Temukan paket Umrah dan Haji sesuai budget, jadwal, dan kebutuhan bersama Mitra HisarGlobal. Konsultasi gratis melalui WhatsApp."
+      content="Pilih paket Umrah dan Haji sesuai budget, jadwal, dan kebutuhan. Cek harga, seat, fasilitas, dan jadwal terbaru melalui admin Mitra HisarGlobal."
     />
   </head>
 
@@ -29,16 +29,27 @@
           <img src="assets/images/logo.jpg" alt="Logo Mitra HisarGlobal" />
           <span>
             <strong>Mitra HisarGlobal</strong>
-            <span>Mitra Informasi Umrah & Haji</span>
+            <span>Informasi Paket Umrah & Haji</span>
           </span>
         </a>
 
         <nav class="nav-menu" data-nav-menu>
           <a href="index.html" class="active">Beranda</a>
-          <a href="paket.html">Paket</a>
-          <a href="index.html#proses">Proses</a>
-          <a href="index.html#legalitas">Legalitas</a>
-          <a href="index.html#testimoni">Testimoni</a>
+
+          <div class="nav-item has-submenu">
+            <a href="index.html#paket" class="nav-parent">
+              Paket
+              <span class="submenu-arrow">▾</span>
+            </a>
+
+            <div class="nav-dropdown">
+              <a href="paket.html">Katalog</a>
+            </div>
+          </div>
+
+          <a href="index.html#proses">Cara Konsultasi</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#legalitas">Benefit</a>
           <a href="kontak.html">Kontak</a>
         </nav>
 
@@ -49,7 +60,7 @@
             target="_blank"
             rel="noopener"
           >
-            Cek Jadwal
+            Cek Seat
           </a>
 
           <button
@@ -67,152 +78,604 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <span class="kicker">Konsultasi Gratis Paket Umrah & Haji</span>
-
-            <h1>
-              Temukan Paket Umrah Terbaik Sesuai Budget, Jadwal, dan Kebutuhan
-              Anda
-            </h1>
-
-            <div class="gold-line"></div>
-
-            <p class="lead">
-              Mitra HisarGlobal membantu calon jamaah membandingkan pilihan
-              paket, mengecek jadwal keberangkatan, memahami fasilitas, dan
-              terhubung dengan alur pendaftaran resmi secara lebih jelas.
-            </p>
-
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                data-whatsapp
-                target="_blank"
-                rel="noopener"
-              >
-                Cek Jadwal & Harga Terbaru
-              </a>
-
-              <a class="btn btn-outline" href="paket.html">
-                Bandingkan Paket ›
-              </a>
-            </div>
-
-            <div class="hero-trust-list" aria-label="Keunggulan layanan">
-              <div>
-                <span class="icon-circle">✓</span>
-                <span>
-                  <strong>Konsultasi gratis</strong>
-                  <small>Bantu pilih paket sesuai kebutuhan</small>
-                </span>
-              </div>
-
-              <div>
-                <span class="icon-circle">↻</span>
-                <span>
-                  <strong>Update jadwal & seat</strong>
-                  <small>Harga dan keberangkatan dikonfirmasi admin</small>
-                </span>
-              </div>
-
-              <div>
-                <span class="icon-circle">♢</span>
-                <span>
-                  <strong>Alur lebih aman</strong>
-                  <small>
-                    Pendaftaran resmi mengikuti penyelenggara berizin
-                  </small>
-                </span>
-              </div>
-            </div>
+      <!-- BANNER PROMO FULL WIDTH -->
+      <section class="hero-banner-full">
+        <div class="banner-slider" data-banner-slider>
+          <div class="banner-slide active">
+            <img
+              src="assets/images/baner/poster 1.png"
+              alt="Banner Promo Umrah Mitra HisarGlobal 1"
+            />
           </div>
 
-          <div class="hero-media">
-            <div class="main-visual">
-              <img
-                src="assets/images/hero-kaaba.png"
-                alt="Poster promo paket Umrah dan Haji Mitra HisarGlobal"
-              />
+          <div class="banner-slide">
+            <img
+              src="assets/images/baner/poster 2.png"
+              alt="Banner Promo Umrah Mitra HisarGlobal 2"
+            />
+          </div>
+
+          <button
+            class="banner-nav banner-prev"
+            type="button"
+            aria-label="Banner sebelumnya"
+            data-banner-prev
+          >
+            ‹
+          </button>
+
+          <button
+            class="banner-nav banner-next"
+            type="button"
+            aria-label="Banner berikutnya"
+            data-banner-next
+          >
+            ›
+          </button>
+
+          <div class="banner-dots" aria-label="Navigasi banner">
+            <button
+              class="active"
+              type="button"
+              aria-label="Banner 1"
+              data-banner-dot="0"
+            ></button>
+
+            <button
+              type="button"
+              aria-label="Banner 2"
+              data-banner-dot="1"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PILIHAN KEBERANGKATAN TERDEKAT -->
+      <section class="search-hero" id="tanggal-terdekat">
+        <div class="container">
+          <div class="search-hero-shell">
+            <div class="search-hero-panel">
+              <div class="search-panel-head">
+                <div class="search-tabs">
+                  <button class="search-tab active" type="button">Umrah</button>
+                  <button class="search-tab" type="button">Haji</button>
+                </div>
+
+                <div class="search-panel-title">
+                  <strong>Pilihan Keberangkatan Terdekat</strong>
+                  <small>
+                    Pilih filter untuk menemukan program yang ingin
+                    dikonsultasikan.
+                  </small>
+                </div>
+              </div>
+
+              <div class="departure-search-grid">
+                <div class="search-field">
+                  <label for="departure-month">Cari Keberangkatan Bulan</label>
+                  <select
+                    id="departure-month"
+                    class="form-control"
+                    data-home-month
+                  >
+                    <option value="">Pilih Bulan</option>
+                    <option value="Juni 2026">Juni 2026</option>
+                    <option value="Juli 2026">Juli 2026</option>
+                    <option value="Agustus 2026">Agustus 2026</option>
+                    <option value="September 2026">September 2026</option>
+                    <option value="Oktober 2026">Oktober 2026</option>
+                  </select>
+                </div>
+
+                <div class="search-field">
+                  <label for="departure-promo">Cari Promo Umrah / Haji</label>
+                  <select
+                    id="departure-promo"
+                    class="form-control"
+                    data-home-promo
+                  >
+                    <option value="">Pilih Promo</option>
+                    <option value="promo">Promo Umrah</option>
+                    <option value="hemat">Paket Hemat</option>
+                    <option value="favorit">Favorit Jamaah</option>
+                    <option value="premium">Paket Premium</option>
+                  </select>
+                </div>
+
+                <div class="search-field">
+                  <label for="departure-type">Cari Jenis Paket</label>
+                  <select
+                    id="departure-type"
+                    class="form-control"
+                    data-home-type
+                  >
+                    <option value="">Pilih Jenis Paket</option>
+                    <option value="umrah-reguler">Umrah Reguler</option>
+                    <option value="umrah-plus">Umrah Plus</option>
+                    <option value="umrah-private">Umrah Private</option>
+                    <option value="haji-khusus">Haji Khusus</option>
+                  </select>
+                </div>
+
+                <div class="search-action-row">
+                  <a
+                    class="btn btn-primary"
+                    data-whatsapp
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Cari Paket Sekarang
+                  </a>
+
+                  <button type="button" class="btn btn-outline">
+                    Hapus Filter
+                  </button>
+                </div>
+              </div>
+
+              <div class="nearest-departure-list">
+                <article class="mini-departure-card">
+                  <div class="mini-departure-thumb">
+                    <img
+                      src="assets/images/baner/poster 1.png"
+                      alt="Poster Umrah Paket Silver"
+                    />
+                  </div>
+
+                  <div class="mini-departure-body">
+                    <div class="mini-meta">
+                      <span>28 Juni 2026</span>
+                      <span>9 Hari</span>
+                    </div>
+
+                    <h3>Umrah Paket Silver</h3>
+
+                    <div class="mini-route">
+                      <span>Jakarta - Jeddah</span>
+                      <span>Seat perlu konfirmasi</span>
+                    </div>
+
+                    <div class="mini-bottom">
+                      <strong>Mulai Rp33.3 Jt</strong>
+                      <span class="mini-status status-full-soft"
+                        >Full Seat</span
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mini-departure-card">
+                  <div class="mini-departure-thumb">
+                    <img
+                      src="assets/images/baner/poster 2.png"
+                      alt="Poster Umrah Eko Plus"
+                    />
+                  </div>
+
+                  <div class="mini-departure-body">
+                    <div class="mini-meta">
+                      <span>28 Juni 2026</span>
+                      <span>12 Hari</span>
+                    </div>
+
+                    <h3>Umrah Eko Plus</h3>
+
+                    <div class="mini-route">
+                      <span>Jakarta - Jeddah</span>
+                      <span>Seat perlu konfirmasi</span>
+                    </div>
+
+                    <div class="mini-bottom">
+                      <strong>Mulai Rp32.5 Jt</strong>
+                      <span class="mini-status status-full-soft"
+                        >Full Seat</span
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mini-departure-card">
+                  <div class="mini-departure-thumb">
+                    <img
+                      src="assets/images/baner/poster 1.png"
+                      alt="Poster Umrah Nyaman Direct"
+                    />
+                  </div>
+
+                  <div class="mini-departure-body">
+                    <div class="mini-meta">
+                      <span>12 Juli 2026</span>
+                      <span>9 Hari</span>
+                    </div>
+
+                    <h3>Umrah Nyaman Direct</h3>
+
+                    <div class="mini-route">
+                      <span>Jakarta - Jeddah</span>
+                      <span>7 Seat</span>
+                    </div>
+
+                    <div class="mini-bottom">
+                      <strong>Mulai Rp32.4 Jt</strong>
+                      <span class="mini-status status-limited-soft"
+                        >Tersedia</span
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mini-departure-card">
+                  <div class="mini-departure-thumb">
+                    <img
+                      src="assets/images/baner/poster 2.png"
+                      alt="Poster Umrah Plus Dubai"
+                    />
+                  </div>
+
+                  <div class="mini-departure-body">
+                    <div class="mini-meta">
+                      <span>18 Juli 2026</span>
+                      <span>10 Hari</span>
+                    </div>
+
+                    <h3>Umrah Plus Dubai</h3>
+
+                    <div class="mini-route">
+                      <span>Jakarta - Dubai - Jeddah</span>
+                      <span>10 Seat</span>
+                    </div>
+
+                    <div class="mini-bottom">
+                      <strong>Mulai Rp32.9 Jt</strong>
+                      <span class="mini-status status-limited-soft"
+                        >Tersedia</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="search-panel-footer">
+                <a class="btn btn-outline" href="paket.html">
+                  Lihat Katalog Lengkap
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-sm">
-        <div class="container home-content-grid">
+      <!-- SECTION LAYANAN UTAMA -->
+      <section class="section-sm service-shortcut-section">
+        <div class="container">
+          <div class="service-shortcut-head">
+            <span class="kicker">Layanan Utama</span>
+
+            <h2>Banyak Layanan Terbaik yang Kami Berikan</h2>
+
+            <p>
+              Pilih kategori layanan yang Anda butuhkan. Untuk sementara,
+              seluruh menu diarahkan ke halaman katalog produk dan layanan Mitra
+              HisarGlobal.
+            </p>
+          </div>
+
+          <div class="service-shortcut-grid">
+            <a class="service-shortcut-card" href="paket.html">
+              <div class="service-shortcut-image">
+                <img
+                  src="assets/images/baner/poster 1.png"
+                  alt="Poster Umrah Reguler"
+                />
+              </div>
+
+              <div class="service-shortcut-body">
+                <span class="service-shortcut-tag">Umrah</span>
+                <h3>Umrah Reguler</h3>
+                <p>
+                  Pilihan paket umrah untuk jamaah yang ingin perjalanan ibadah
+                  nyaman dengan jadwal yang dapat dikonsultasikan.
+                </p>
+
+                <span class="service-shortcut-button">Lihat Katalog →</span>
+              </div>
+            </a>
+
+            <a
+              class="service-shortcut-card service-shortcut-card-featured"
+              href="paket.html"
+            >
+              <div class="service-shortcut-image">
+                <img
+                  src="assets/images/baner/poster 2.png"
+                  alt="Poster Umrah Private"
+                />
+              </div>
+
+              <div class="service-shortcut-body">
+                <span class="service-shortcut-tag">Private</span>
+                <h3>Umrah Private</h3>
+                <p>
+                  Program perjalanan ibadah yang lebih personal untuk keluarga,
+                  komunitas, atau grup dengan kebutuhan khusus.
+                </p>
+
+                <span class="service-shortcut-button">Lihat Katalog →</span>
+              </div>
+            </a>
+
+            <a class="service-shortcut-card" href="paket.html">
+              <div class="service-shortcut-image">
+                <img
+                  src="assets/images/baner/poster 1.png"
+                  alt="Poster Tabungan Umroh"
+                />
+              </div>
+
+              <div class="service-shortcut-body">
+                <span class="service-shortcut-tag">Pembiayaan</span>
+                <h3>Tabungan Umroh</h3>
+                <p>
+                  Layanan perencanaan biaya umroh secara bertahap agar calon
+                  jamaah dapat mempersiapkan perjalanan lebih terarah.
+                </p>
+
+                <span class="service-shortcut-button">Lihat Katalog →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PAKET PILIHAN -->
+      <section class="section-sm" id="paket">
+        <div class="container">
           <section class="panel panel-pad priority-package-panel">
-            <div class="section-title-row">
+            <div class="section-title-row product-title-row">
               <div>
                 <span class="kicker">Paket Pilihan</span>
+
                 <h2 style="margin-top: 10px">
-                  Paket Umrah yang Paling Banyak Dicari
+                  Paket Umrah yang Bisa Anda Konsultasikan
                 </h2>
+
                 <p class="section-subtitle">
-                  Bandingkan harga mulai, durasi, jadwal, dan fasilitas utama
-                  sebelum menghubungi admin.
+                  Pilih jenis paket yang diminati. Harga, jadwal, hotel,
+                  maskapai, dan ketersediaan seat dapat berubah mengikuti update
+                  penyelenggara, sehingga status final perlu dicek melalui
+                  admin.
                 </p>
               </div>
 
-              <a href="paket.html">Lihat semua paket →</a>
+              <a href="paket.html">Lihat katalog lengkap →</a>
             </div>
 
-            <div class="package-carousel" data-featured></div>
+            <div class="mitra-product-grid">
+              <article class="mitra-product-card">
+                <div class="product-card-top">
+                  <span class="package-status status-check">
+                    Perlu Konfirmasi
+                  </span>
+                  <span class="product-icon">🕋</span>
+                </div>
 
-            <div class="package-value-points">
-              <span>✓ Cek ketersediaan seat</span>
-              <span>✓ Konsultasi sesuai budget</span>
-              <span>✓ Tanya fasilitas & itinerary</span>
+                <h3>Umrah Reguler</h3>
+
+                <p>
+                  Pilihan untuk jamaah yang ingin fokus ibadah dengan perjalanan
+                  nyaman dan budget lebih efisien.
+                </p>
+
+                <ul>
+                  <li>Harga: dikonfirmasi admin</li>
+                  <li>Jadwal: mengikuti ketersediaan seat</li>
+                  <li>Cocok untuk: individu, keluarga, dan grup kecil</li>
+                </ul>
+
+                <a
+                  class="btn btn-primary product-cta"
+                  data-whatsapp
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Cek Seat Paket Ini
+                </a>
+              </article>
+
+              <article class="mitra-product-card featured-product">
+                <div class="product-card-top">
+                  <span class="package-status status-limited">
+                    Favorit Jamaah
+                  </span>
+                  <span class="product-icon">☀</span>
+                </div>
+
+                <h3>Umrah Plus Badar</h3>
+
+                <p>
+                  Paket untuk jamaah yang ingin perjalanan ibadah sekaligus
+                  mengenal nilai sejarah Islam dalam rute tambahan.
+                </p>
+
+                <ul>
+                  <li>Harga: dikonfirmasi admin</li>
+                  <li>Seat: perlu dicek sebelum daftar</li>
+                  <li>Cocok untuk: jamaah yang ingin pengalaman historis</li>
+                </ul>
+
+                <a
+                  class="btn btn-primary product-cta"
+                  data-whatsapp
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Tanya Jadwal Badar
+                </a>
+              </article>
+
+              <article class="mitra-product-card">
+                <div class="product-card-top">
+                  <span class="package-status status-check">Cek Jadwal</span>
+                  <span class="product-icon">✦</span>
+                </div>
+
+                <h3>Umrah Plus Dubai</h3>
+
+                <p>
+                  Pilihan untuk jamaah yang ingin perjalanan ibadah dengan
+                  tambahan pengalaman wisata muslim modern.
+                </p>
+
+                <ul>
+                  <li>Harga: dikonfirmasi admin</li>
+                  <li>Jadwal: mengikuti program tersedia</li>
+                  <li>Cocok untuk: jamaah yang ingin rute premium</li>
+                </ul>
+
+                <a
+                  class="btn btn-primary product-cta"
+                  data-whatsapp
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Tanya Jadwal Dubai
+                </a>
+              </article>
+
+              <article class="mitra-product-card">
+                <div class="product-card-top">
+                  <span class="package-status status-check">Cek Seat</span>
+                  <span class="product-icon">◇</span>
+                </div>
+
+                <h3>Umrah Plus Oman</h3>
+
+                <p>
+                  Paket untuk jamaah yang ingin pilihan rute berbeda dengan
+                  suasana perjalanan yang lebih eksklusif.
+                </p>
+
+                <ul>
+                  <li>Harga: dikonfirmasi admin</li>
+                  <li>Seat: dapat berubah sewaktu-waktu</li>
+                  <li>Cocok untuk: jamaah yang mencari variasi rute</li>
+                </ul>
+
+                <a
+                  class="btn btn-primary product-cta"
+                  data-whatsapp
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Tanya Jadwal Oman
+                </a>
+              </article>
+            </div>
+
+            <div class="availability-note">
+              <strong>Catatan ketersediaan:</strong>
+              Paket yang tampil adalah pilihan yang dapat dikonsultasikan. Jika
+              jadwal tertentu sudah full, admin akan membantu mencarikan jadwal
+              alternatif atau paket lain yang mendekati kebutuhan, budget, dan
+              jumlah jamaah.
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- SECTION CARA KONSULTASI -->
+      <section class="section-sm consult-section">
+        <div class="container home-content-grid">
+          <section class="panel panel-pad consult-reason-card">
+            <span class="kicker">Kenapa Perlu Konsultasi?</span>
+
+            <h2 style="margin-top: 10px">
+              Harga, Seat, dan Jadwal Bisa Berubah Mengikuti Update Terbaru
+            </h2>
+
+            <p class="section-subtitle">
+              Pada paket Umrah dan Haji, ketersediaan seat, maskapai, hotel,
+              tanggal keberangkatan, dan harga dapat berubah. Karena itu,
+              customer sebaiknya memilih paket yang diminati terlebih dahulu,
+              lalu melakukan pengecekan final melalui admin.
+            </p>
+
+            <div class="consult-point-grid">
+              <div>
+                <strong>01. Pilih paket</strong>
+                <span>Tentukan program yang paling mendekati kebutuhan.</span>
+              </div>
+
+              <div>
+                <strong>02. Cek detail</strong>
+                <span>Admin validasi harga, seat, jadwal, dan fasilitas.</span>
+              </div>
+
+              <div>
+                <strong>03. Dapat alternatif</strong>
+                <span>Jika penuh, admin bantu rekomendasi paket serupa.</span>
+              </div>
+
+              <div>
+                <strong>04. Lanjut resmi</strong>
+                <span
+                  >Pendaftaran mengikuti prosedur penyelenggara berizin.</span
+                >
+              </div>
             </div>
           </section>
 
           <aside>
             <section class="panel timeline-card" id="proses">
-              <span class="kicker">Proses</span>
-              <h2 style="margin-top: 10px">Langkah Konsultasi</h2>
+              <span class="kicker">Cara Konsultasi</span>
+
+              <h2 style="margin-top: 10px">Alur Cek Paket</h2>
 
               <div class="timeline">
                 <div class="timeline-item">
                   <span class="timeline-num">1</span>
+
                   <div>
                     <strong>Klik WhatsApp</strong>
                     <p>
-                      Tanyakan paket, budget, jumlah jamaah, dan target bulan
-                      keberangkatan.
+                      Kirim paket yang diminati, jumlah jamaah, budget, dan
+                      target bulan keberangkatan.
                     </p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <span class="timeline-num">2</span>
+
                   <div>
-                    <strong>Terima Rekomendasi</strong>
+                    <strong>Admin Cek Status</strong>
                     <p>
-                      Admin membantu membandingkan paket, fasilitas, hotel, dan
-                      estimasi biaya.
+                      Seat, harga, jadwal, hotel, maskapai, dan fasilitas
+                      dikonfirmasi ulang.
                     </p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <span class="timeline-num">3</span>
+
                   <div>
-                    <strong>Cek Jadwal & Seat</strong>
+                    <strong>Terima Rekomendasi</strong>
                     <p>
-                      Ketersediaan keberangkatan, harga terbaru, dan detail
-                      itinerary dikonfirmasi ulang.
+                      Jika paket penuh, admin dapat menawarkan jadwal atau paket
+                      alternatif.
                     </p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <span class="timeline-num">4</span>
+
                   <div>
-                    <strong>Lanjut Pendaftaran Resmi</strong>
+                    <strong>Lanjut Pendaftaran</strong>
                     <p>
-                      Administrasi dan pembayaran diarahkan sesuai prosedur
-                      penyelenggara resmi berizin.
+                      Jika cocok, proses berikutnya mengikuti alur resmi dari
+                      penyelenggara perjalanan ibadah.
                     </p>
                   </div>
                 </div>
@@ -220,144 +683,211 @@
             </section>
           </aside>
         </div>
+      </section>
 
+      <!-- SECTION FAQ -->
+      <section class="section-sm" id="faq">
         <div class="container">
-          <section class="home-trust-grid" id="testimoni">
-            <div class="panel panel-pad testimonials">
-              <span class="kicker">Kepercayaan</span>
-              <h2 style="margin-top: 10px">
-                Hal yang Membantu Customer Lebih Yakin
-              </h2>
+          <section class="panel panel-pad faq-panel">
+            <div class="section-title-row">
+              <div>
+                <span class="kicker">FAQ</span>
 
-              <div class="review-grid">
-                <article class="review">
-                  <span class="avatar">01</span>
-                  <div>
-                    <strong>Informasi paket tidak dibuat samar</strong>
-                    <div class="stars">★★★★★</div>
-                    <p>
-                      Customer dapat menanyakan harga terbaru, durasi, jadwal
-                      keberangkatan, fasilitas hotel, dan itinerary sebelum
-                      mengambil keputusan.
-                    </p>
-                  </div>
-                </article>
+                <h2 style="margin-top: 10px">
+                  Pertanyaan Seputar Seat, Harga, dan Paket
+                </h2>
 
-                <article class="review">
-                  <span class="avatar">02</span>
-                  <div>
-                    <strong>Konsultasi sebelum memilih paket</strong>
-                    <div class="stars">★★★★★</div>
-                    <p>
-                      Admin membantu menyesuaikan pilihan paket berdasarkan
-                      jumlah jamaah, budget, kebutuhan keluarga, dan target bulan
-                      keberangkatan.
-                    </p>
-                  </div>
-                </article>
+                <p class="section-subtitle">
+                  Bagian ini membantu customer memahami bahwa website mitra
+                  berfungsi sebagai etalase informasi dan pintu konsultasi,
+                  bukan sistem booking otomatis.
+                </p>
               </div>
             </div>
 
-            <div class="panel stats home-stats">
-              <div class="stat">
-                <span class="stat-icon">💬</span>
-                <strong>Gratis</strong>
-                <span>Konsultasi</span>
-                <small>Tanya paket tanpa komitmen awal</small>
-              </div>
+            <div class="faq-grid">
+              <article class="faq-item">
+                <h3>Apakah paket yang tampil pasti masih tersedia?</h3>
+                <p>
+                  Belum tentu. Ketersediaan seat, harga, hotel, maskapai, dan
+                  jadwal keberangkatan dapat berubah mengikuti update dari
+                  penyelenggara. Admin akan membantu mengecek status terbaru.
+                </p>
+              </article>
 
-              <div class="stat">
-                <span class="stat-icon">📅</span>
-                <strong>Update</strong>
-                <span>Jadwal</span>
-                <small>Keberangkatan dikonfirmasi admin</small>
-              </div>
+              <article class="faq-item">
+                <h3>Bagaimana jika paket yang saya pilih sudah full?</h3>
+                <p>
+                  Admin akan membantu mencarikan jadwal alternatif atau paket
+                  lain yang mendekati kebutuhan, budget, dan jumlah jamaah.
+                </p>
+              </article>
 
-              <div class="stat">
-                <span class="stat-icon">🧾</span>
-                <strong>Jelas</strong>
-                <span>Fasilitas</span>
-                <small>Harga, hotel, dan itinerary dapat ditanyakan</small>
-              </div>
+              <article class="faq-item">
+                <h3>Apakah konsultasi dikenakan biaya?</h3>
+                <p>
+                  Konsultasi awal melalui WhatsApp tidak dikenakan biaya.
+                  Customer dapat bertanya dahulu sebelum mengambil keputusan.
+                </p>
+              </article>
 
-              <div class="stat">
-                <span class="stat-icon">🛡️</span>
-                <strong>Aman</strong>
-                <span>Alur Resmi</span>
-                <small>Pendaftaran mengikuti penyelenggara berizin</small>
-              </div>
+              <article class="faq-item">
+                <h3>Apakah harga di website bersifat final?</h3>
+                <p>
+                  Harga yang tampil atau diinformasikan bersifat
+                  estimasi/pilihan awal. Harga final perlu dikonfirmasi kembali
+                  karena dapat berubah mengikuti seat, jadwal, dan fasilitas
+                  tersedia.
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>Pembayaran dilakukan ke siapa?</h3>
+                <p>
+                  Pembayaran resmi mengikuti ketentuan penyelenggara perjalanan
+                  ibadah yang berizin. Customer dapat meminta penjelasan alur
+                  administrasi sebelum melanjutkan proses.
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>Apakah bisa konsultasi untuk keluarga atau grup?</h3>
+                <p>
+                  Bisa. Sampaikan jumlah jamaah, target keberangkatan, dan
+                  kisaran budget agar admin dapat membantu memberikan
+                  rekomendasi yang lebih sesuai.
+                </p>
+              </article>
             </div>
-
-            <section class="panel validation-card" id="legalitas">
-              <div class="validation-head">
-                <span
-                  class="kicker"
-                  style="
-                    background: rgba(255, 255, 255, 0.1);
-                    color: #fff;
-                    border-color: rgba(255, 255, 255, 0.18);
-                  "
-                >
-                  Validasi
-                </span>
-
-                <h2 style="margin-top: 10px">Legalitas & Alur Aman</h2>
-
-                <div class="validation-list">
-                  <div>
-                    <span>✓</span>
-                    <div>
-                      <strong>Terhubung ke penyelenggara resmi</strong>
-                      <small>
-                        Admin membantu mengarahkan calon jamaah ke proses
-                        pendaftaran yang sesuai prosedur.
-                      </small>
-                    </div>
-                  </div>
-
-                  <div>
-                    <span>↻</span>
-                    <div>
-                      <strong>Harga dan seat dikonfirmasi ulang</strong>
-                      <small>
-                        Jadwal, fasilitas, maskapai, dan hotel dapat berubah
-                        mengikuti update penyelenggara.
-                      </small>
-                    </div>
-                  </div>
-
-                  <div>
-                    <span>🧾</span>
-                    <div>
-                      <strong>Pembayaran mengikuti pihak resmi</strong>
-                      <small>
-                        Customer dapat meminta penjelasan alur administrasi
-                        sebelum melanjutkan pendaftaran.
-                      </small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="disclaimer">
-                <strong>Catatan transparansi:</strong> Mitra HisarGlobal adalah
-                media informasi dan konsultasi paket. Pendaftaran, dokumen, dan
-                pembayaran resmi mengikuti ketentuan penyelenggara perjalanan
-                ibadah Umrah & Haji yang berizin.
-              </div>
-            </section>
           </section>
         </div>
+      </section>
 
+      <!-- SECTION BENEFIT -->
+      <section class="section-sm" id="legalitas">
+        <div class="container">
+          <section class="panel mitra-benefit-section">
+            <div class="mitra-benefit-head">
+              <div>
+                <span class="kicker benefit-kicker">Keuntungan Mitra</span>
+
+                <h2>Keuntungan Konsultasi Melalui Mitra HisarGlobal</h2>
+
+                <p>
+                  Calon jamaah dapat memilih paket yang diminati terlebih
+                  dahulu, lalu admin membantu mengecek jadwal, harga, seat,
+                  fasilitas, dan alternatif paket yang paling sesuai dengan
+                  kebutuhan perjalanan.
+                </p>
+              </div>
+
+              <a
+                class="btn btn-gold"
+                data-whatsapp
+                target="_blank"
+                rel="noopener"
+              >
+                Konsultasi Sekarang
+              </a>
+            </div>
+
+            <div class="mitra-benefit-grid">
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">✓</span>
+                <div>
+                  <strong>Paket lebih mudah dibandingkan</strong>
+                  <small>
+                    Customer dapat melihat pilihan paket Umrah, Haji,
+                    pembiayaan, hotel, dan wisata muslim sebelum berkonsultasi
+                    dengan admin.
+                  </small>
+                </div>
+              </article>
+
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">↻</span>
+                <div>
+                  <strong>Seat dan harga dibantu dicek ulang</strong>
+                  <small>
+                    Admin membantu mengecek ketersediaan terbaru karena seat,
+                    jadwal, harga, hotel, dan maskapai dapat berubah mengikuti
+                    update penyelenggara.
+                  </small>
+                </div>
+              </article>
+
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">💬</span>
+                <div>
+                  <strong>Bisa konsultasi sesuai budget</strong>
+                  <small>
+                    Calon jamaah dapat menyampaikan budget, jumlah jamaah,
+                    rencana bulan keberangkatan, dan kebutuhan khusus agar
+                    rekomendasi lebih terarah.
+                  </small>
+                </div>
+              </article>
+
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">♢</span>
+                <div>
+                  <strong>Dibantu cari alternatif jika paket penuh</strong>
+                  <small>
+                    Jika paket yang diminati sudah full seat, admin dapat
+                    membantu mencarikan jadwal lain atau paket serupa yang masih
+                    tersedia.
+                  </small>
+                </div>
+              </article>
+
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">🧾</span>
+                <div>
+                  <strong>Informasi fasilitas lebih jelas</strong>
+                  <small>
+                    Customer dapat menanyakan detail hotel, rute perjalanan,
+                    maskapai, city tour, dokumen, durasi perjalanan, dan
+                    estimasi biaya.
+                  </small>
+                </div>
+              </article>
+
+              <article class="mitra-benefit-item">
+                <span class="mitra-benefit-icon">🛡</span>
+                <div>
+                  <strong>Tetap diarahkan ke alur resmi</strong>
+                  <small>
+                    Proses pendaftaran, dokumen, dan pembayaran tetap mengikuti
+                    ketentuan penyelenggara perjalanan ibadah yang berizin.
+                  </small>
+                </div>
+              </article>
+            </div>
+
+            <div class="mitra-benefit-note">
+              <strong>Catatan:</strong>
+              Mitra HisarGlobal membantu calon jamaah mendapatkan informasi awal
+              dan konsultasi paket. Status akhir seat, harga, jadwal, dokumen,
+              fasilitas, dan pembayaran tetap perlu dikonfirmasi melalui admin
+              sebelum calon jamaah melanjutkan pendaftaran.
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- SECTION CTA AKHIR -->
+      <section class="section-sm closing-section">
         <div class="container">
           <section class="cta-banner">
             <div>
-              <span class="cta-kicker">Siap konsultasi?</span>
-              <h2>Cek jadwal, harga, dan ketersediaan seat terbaru sekarang</h2>
+              <span class="cta-kicker">Siap cek ketersediaan?</span>
+
+              <h2>Cek jadwal, harga, dan seat terbaru sebelum memilih paket</h2>
+
               <p>
-                Sampaikan kebutuhan Anda melalui WhatsApp. Admin akan membantu
-                mencarikan rekomendasi paket yang paling sesuai dengan budget,
-                jadwal, dan jumlah jamaah.
+                Sampaikan paket yang diminati melalui WhatsApp. Admin akan
+                membantu mengecek status terbaru dan memberikan alternatif jika
+                paket pilihan sudah penuh.
               </p>
             </div>
 
@@ -367,7 +897,7 @@
               target="_blank"
               rel="noopener"
             >
-              Tanya Ketersediaan Seat
+              Cek Seat via WhatsApp
             </a>
           </section>
         </div>
@@ -380,24 +910,26 @@
           <div>
             <h3>Mitra HisarGlobal</h3>
             <p>
-              Mitra informasi dan konsultasi untuk membantu calon jamaah
-              membandingkan paket Umrah & Haji sebelum melanjutkan ke proses
-              resmi melalui penyelenggara berizin.
+              Mitra HisarGlobal membantu calon jamaah mendapatkan informasi
+              paket, jadwal, fasilitas, dan alur konsultasi sebelum melanjutkan
+              proses pendaftaran melalui penyelenggara perjalanan ibadah
+              berizin.
             </p>
           </div>
 
           <div>
             <h4>Menu</h4>
             <a href="index.html">Beranda</a>
+            <a href="index.html#paket">Paket Pilihan</a>
             <a href="paket.html">Katalog Paket</a>
             <a href="kontak.html">Kontak</a>
           </div>
 
           <div>
             <h4>Informasi</h4>
-            <a href="index.html#proses">Langkah Konsultasi</a>
-            <a href="index.html#legalitas">Info & Validasi</a>
-            <a href="index.html#testimoni">Kata Jamaah</a>
+            <a href="index.html#proses">Cara Konsultasi</a>
+            <a href="index.html#faq">FAQ Seat & Harga</a>
+            <a href="index.html#legalitas">Benefit</a>
           </div>
 
           <div class="footer-contact">
@@ -496,17 +1028,88 @@
 
         <div class="footer-bottom">
           <p>
-            © <span data-year></span> Mitra HisarGlobal. Website ini adalah
-            media informasi/promosi mitra. Pendaftaran dan pembayaran resmi
-            mengikuti pihak penyelenggara.
+            © <span data-year></span> Mitra HisarGlobal. Informasi paket, harga,
+            jadwal, dan seat perlu dikonfirmasi ulang melalui admin. Pendaftaran
+            dan pembayaran resmi mengikuti pihak penyelenggara.
           </p>
         </div>
       </div>
     </footer>
 
     <a class="sticky-whatsapp" data-whatsapp target="_blank" rel="noopener">
-      💬 Cek Jadwal & Harga
+      💬 Cek Seat & Harga
     </a>
+
+    <!-- SCRIPT BANNER SLIDER -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector("[data-banner-slider]");
+        if (!slider) return;
+
+        const slides = Array.from(slider.querySelectorAll(".banner-slide"));
+        const dots = Array.from(slider.querySelectorAll("[data-banner-dot]"));
+        const prev = slider.querySelector("[data-banner-prev]");
+        const next = slider.querySelector("[data-banner-next]");
+
+        let current = 0;
+        let timer = null;
+
+        function showSlide(index) {
+          current = (index + slides.length) % slides.length;
+
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === current);
+          });
+
+          dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === current);
+          });
+        }
+
+        function nextSlide() {
+          showSlide(current + 1);
+        }
+
+        function startAutoSlide() {
+          stopAutoSlide();
+          timer = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoSlide() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        if (prev) {
+          prev.addEventListener("click", function () {
+            showSlide(current - 1);
+            startAutoSlide();
+          });
+        }
+
+        if (next) {
+          next.addEventListener("click", function () {
+            showSlide(current + 1);
+            startAutoSlide();
+          });
+        }
+
+        dots.forEach((dot) => {
+          dot.addEventListener("click", function () {
+            showSlide(Number(dot.dataset.bannerDot));
+            startAutoSlide();
+          });
+        });
+
+        slider.addEventListener("mouseenter", stopAutoSlide);
+        slider.addEventListener("mouseleave", startAutoSlide);
+
+        showSlide(0);
+        startAutoSlide();
+      });
+    </script>
 
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
