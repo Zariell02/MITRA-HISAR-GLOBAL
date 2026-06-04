@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Haji | Mitra HisarGlobal</title>
+    <meta
+      name="description"
+      content="Informasi program Haji Hisar Global melalui Mitra HisarGlobal. Cek fasilitas, jadwal, estimasi biaya, dan konsultasi admin."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="Mitra HisarGlobal">
+          <img src="assets/images/logo.jpg" alt="Logo Mitra HisarGlobal" />
+          <span>
+            <strong>Mitra HisarGlobal</strong>
+            <span>Informasi Paket Umrah & Haji</span>
+          </span>
+        </a>
+
+        <nav class="nav-menu" data-nav-menu>
+          <a href="index.html">Beranda</a>
+
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent active"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Haji
+              <span class="submenu-arrow">▾</span>
+            </button>
+
+            <div class="nav-dropdown">
+              <a href="haji.html">Info Haji 2026</a>
+            </div>
+          </div>
+
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Umroh
+              <span class="submenu-arrow">▾</span>
+            </button>
+
+            <div class="nav-dropdown nav-dropdown-wide">
+              <a href="umrah.html">Semua Paket Umroh Hisar</a>
+              <a href="umrah.html?q=private">Umroh Private</a>
+              <a href="tabungan-umroh.html">Pilih Tabungan Umroh</a>
+            </div>
+          </div>
+
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Informasi
+              <span class="submenu-arrow">▾</span>
+            </button>
+
+            <div class="nav-dropdown nav-dropdown-info">
+              <a href="index.html#proses">Cara Konsultasi</a>
+              <a href="index.html#faq">FAQ</a>
+              <a href="index.html#legalitas">Benefit</a>
+            </div>
+          </div>
+
+          <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="btn btn-primary"
+            data-whatsapp
+            target="_blank"
+            rel="noopener"
+            >Cek Seat</a
+          >
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Buka menu"
+            data-menu-toggle
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main data-split-catalog="haji">
+      <section class="split-catalog-hero">
+        <div class="container">
+          <span class="kicker">Katalog Haji</span>
+          <h1>Program Haji Hisar Global</h1>
+          <p class="lead">
+            Informasi program Haji, fasilitas, estimasi biaya, dan alur
+            konsultasi. Semua detail final tetap perlu dikonfirmasi melalui
+            admin.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="split-filter-bar">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Cari paket haji..."
+              data-split-search
+            />
+
+            <select class="form-control" data-split-category>
+              <option value="Semua">Semua Kategori</option>
+            </select>
+
+            <select class="form-control" data-split-status>
+              <option value="">Semua Status</option>
+              <option value="available">Tersedia</option>
+              <option value="limited">Seat Terbatas</option>
+              <option value="full">Full Seat</option>
+              <option value="closed">Ditutup</option>
+              <option value="coming-soon">Segera Hadir</option>
+            </select>
+
+            <select class="form-control" data-split-sort>
+              <option value="default">Urutan Default</option>
+              <option value="name">Nama A-Z</option>
+              <option value="price-low">Harga Terendah</option>
+              <option value="price-high">Harga Tertinggi</option>
+            </select>
+          </div>
+
+          <div class="split-catalog-head">
+            <strong data-split-count>Memuat produk...</strong>
+          </div>
+
+          <div class="catalog-grid split-catalog-grid" data-split-grid>
+            <div class="notice">Memuat katalog haji...</div>
+          </div>
+
+          <div class="notice" data-split-empty style="display: none">
+            Produk haji belum tersedia atau tidak sesuai filter.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>
+            © <span data-year></span> Mitra HisarGlobal. Informasi paket, harga,
+            jadwal, fasilitas, dan seat perlu dikonfirmasi ulang melalui admin.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="sticky-whatsapp" data-whatsapp target="_blank" rel="noopener">
+      💬 Cek Seat & Harga
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/split-catalog.js"></script>
+  </body>
+</html>

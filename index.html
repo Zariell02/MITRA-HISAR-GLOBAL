@@ -36,20 +36,58 @@
         <nav class="nav-menu" data-nav-menu>
           <a href="index.html" class="active">Beranda</a>
 
-          <div class="nav-item has-submenu">
-            <a href="index.html#paket" class="nav-parent">
-              Paket
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Haji
               <span class="submenu-arrow">▾</span>
-            </a>
+            </button>
 
             <div class="nav-dropdown">
-              <a href="paket.html">Katalog</a>
+              <a href="haji.html">Info Haji 2026</a>
             </div>
           </div>
 
-          <a href="index.html#proses">Cara Konsultasi</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#legalitas">Benefit</a>
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Umroh
+              <span class="submenu-arrow">▾</span>
+            </button>
+
+            <div class="nav-dropdown nav-dropdown-wide">
+              <a href="umrah.html">Semua Paket Umroh Hisar</a>
+              <a href="umrah.html?q=private">Umroh Private</a>
+              <a href="tabungan-umroh.html">Pilih Tabungan Umroh</a>
+            </div>
+          </div>
+
+          <div class="nav-item has-submenu" data-submenu>
+            <button
+              class="nav-parent"
+              type="button"
+              aria-expanded="false"
+              data-submenu-toggle
+            >
+              Informasi
+              <span class="submenu-arrow">▾</span>
+            </button>
+
+            <div class="nav-dropdown nav-dropdown-info">
+              <a href="index.html#proses">Cara Konsultasi</a>
+              <a href="index.html#faq">FAQ</a>
+              <a href="index.html#legalitas">Benefit</a>
+            </div>
+          </div>
+
           <a href="kontak.html">Kontak</a>
         </nav>
 
@@ -78,19 +116,19 @@
     </header>
 
     <main>
-      <!-- BANNER PROMO FULLS  -->
+      <!-- BANNER PROMO FULL -->
       <section class="hero-banner-full">
         <div class="banner-slider" data-banner-slider>
           <div class="banner-slide active">
             <img
-              src="assets/images/Baner/poster-1.png"
+              src="assets/images/baner/poster-1.png"
               alt="Banner Promo Umrah Mitra HisarGlobal 1"
             />
           </div>
 
           <div class="banner-slide">
             <img
-              src="assets/images/Baner/poster-2.png"
+              src="assets/images/baner/poster-2.png"
               alt="Banner Promo Umrah Mitra HisarGlobal 2"
             />
           </div>
@@ -213,126 +251,8 @@
                 </div>
               </div>
 
-              <div class="nearest-departure-list">
-                <article class="mini-departure-card">
-                  <div class="mini-departure-thumb">
-                    <img
-                      src="assets/images/Baner/poster-1.png"
-                      alt="Poster Umrah Paket Silver"
-                    />
-                  </div>
-
-                  <div class="mini-departure-body">
-                    <div class="mini-meta">
-                      <span>28 Juni 2026</span>
-                      <span>9 Hari</span>
-                    </div>
-
-                    <h3>Umrah Paket Silver</h3>
-
-                    <div class="mini-route">
-                      <span>Jakarta - Jeddah</span>
-                      <span>Seat perlu konfirmasi</span>
-                    </div>
-
-                    <div class="mini-bottom">
-                      <strong>Mulai Rp33.3 Jt</strong>
-                      <span class="mini-status status-full-soft"
-                        >Full Seat</span
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article class="mini-departure-card">
-                  <div class="mini-departure-thumb">
-                    <img
-                      src="assets/images/Baner/poster-2.png"
-                      alt="Poster Umrah Eko Plus"
-                    />
-                  </div>
-
-                  <div class="mini-departure-body">
-                    <div class="mini-meta">
-                      <span>28 Juni 2026</span>
-                      <span>12 Hari</span>
-                    </div>
-
-                    <h3>Umrah Eko Plus</h3>
-
-                    <div class="mini-route">
-                      <span>Jakarta - Jeddah</span>
-                      <span>Seat perlu konfirmasi</span>
-                    </div>
-
-                    <div class="mini-bottom">
-                      <strong>Mulai Rp32.5 Jt</strong>
-                      <span class="mini-status status-full-soft"
-                        >Full Seat</span
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article class="mini-departure-card">
-                  <div class="mini-departure-thumb">
-                    <img
-                      src="assets/images/Baner/poster-1.png"
-                      alt="Poster Umrah Nyaman Direct"
-                    />
-                  </div>
-
-                  <div class="mini-departure-body">
-                    <div class="mini-meta">
-                      <span>12 Juli 2026</span>
-                      <span>9 Hari</span>
-                    </div>
-
-                    <h3>Umrah Nyaman Direct</h3>
-
-                    <div class="mini-route">
-                      <span>Jakarta - Jeddah</span>
-                      <span>7 Seat</span>
-                    </div>
-
-                    <div class="mini-bottom">
-                      <strong>Mulai Rp32.4 Jt</strong>
-                      <span class="mini-status status-limited-soft"
-                        >Tersedia</span
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article class="mini-departure-card">
-                  <div class="mini-departure-thumb">
-                    <img
-                      src="assets/images/Baner/poster-2.png"
-                      alt="Poster Umrah Plus Dubai"
-                    />
-                  </div>
-
-                  <div class="mini-departure-body">
-                    <div class="mini-meta">
-                      <span>18 Juli 2026</span>
-                      <span>10 Hari</span>
-                    </div>
-
-                    <h3>Umrah Plus Dubai</h3>
-
-                    <div class="mini-route">
-                      <span>Jakarta - Dubai - Jeddah</span>
-                      <span>10 Seat</span>
-                    </div>
-
-                    <div class="mini-bottom">
-                      <strong>Mulai Rp32.9 Jt</strong>
-                      <span class="mini-status status-limited-soft"
-                        >Tersedia</span
-                      >
-                    </div>
-                  </div>
-                </article>
+              <div class="nearest-departure-list" data-nearest-packages>
+                <div class="notice">Memuat data keberangkatan terdekat...</div>
               </div>
 
               <div class="search-panel-footer">
@@ -360,69 +280,8 @@
             </p>
           </div>
 
-          <div class="service-shortcut-grid">
-            <a class="service-shortcut-card" href="paket.html">
-              <div class="service-shortcut-image">
-                <img
-                  src="assets/images/Baner/poster-1.png"
-                  alt="Poster Umrah Reguler"
-                />
-              </div>
-
-              <div class="service-shortcut-body">
-                <span class="service-shortcut-tag">Umrah</span>
-                <h3>Umrah Reguler</h3>
-                <p>
-                  Pilihan paket umrah untuk jamaah yang ingin perjalanan ibadah
-                  nyaman dengan jadwal yang dapat dikonsultasikan.
-                </p>
-
-                <span class="service-shortcut-button">Lihat Katalog →</span>
-              </div>
-            </a>
-
-            <a
-              class="service-shortcut-card service-shortcut-card-featured"
-              href="paket.html"
-            >
-              <div class="service-shortcut-image">
-                <img
-                  src="assets/images/Baner/poster-2.png"
-                  alt="Poster Umrah Private"
-                />
-              </div>
-
-              <div class="service-shortcut-body">
-                <span class="service-shortcut-tag">Private</span>
-                <h3>Umrah Private</h3>
-                <p>
-                  Program perjalanan ibadah yang lebih personal untuk keluarga,
-                  komunitas, atau grup dengan kebutuhan khusus.
-                </p>
-
-                <span class="service-shortcut-button">Lihat Katalog →</span>
-              </div>
-            </a>
-
-            <a class="service-shortcut-card" href="paket.html">
-              <div class="service-shortcut-image">
-                <img
-                  src="assets/images/Baner/poster-1.png"
-                  alt="Poster Tabungan Umroh"
-                />
-              </div>
-
-              <div class="service-shortcut-body">
-                <span class="service-shortcut-tag">Pembiayaan</span>
-                <h3>Tabungan Umroh</h3>
-                <p>
-                  Layanan perencanaan biaya umroh secara bertahap agar calon
-                  jamaah dapat mempersiapkan perjalanan lebih terarah.
-                </p>
-
-                <span class="service-shortcut-button">Lihat Katalog →</span>
-              </div>
-            </a>
+          <div class="service-shortcut-grid" data-service-shortcuts>
+            <div class="notice">Memuat layanan utama...</div>
           </div>
         </div>
       </section>
@@ -450,126 +309,8 @@
               <a href="paket.html">Lihat katalog lengkap →</a>
             </div>
 
-            <div class="mitra-product-grid">
-              <article class="mitra-product-card">
-                <div class="product-card-top">
-                  <span class="package-status status-check">
-                    Perlu Konfirmasi
-                  </span>
-                  <span class="product-icon">🕋</span>
-                </div>
-
-                <h3>Umrah Reguler</h3>
-
-                <p>
-                  Pilihan untuk jamaah yang ingin fokus ibadah dengan perjalanan
-                  nyaman dan budget lebih efisien.
-                </p>
-
-                <ul>
-                  <li>Harga: dikonfirmasi admin</li>
-                  <li>Jadwal: mengikuti ketersediaan seat</li>
-                  <li>Cocok untuk: individu, keluarga, dan grup kecil</li>
-                </ul>
-
-                <a
-                  class="btn btn-primary product-cta"
-                  data-whatsapp
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Cek Seat Paket Ini
-                </a>
-              </article>
-
-              <article class="mitra-product-card featured-product">
-                <div class="product-card-top">
-                  <span class="package-status status-limited">
-                    Favorit Jamaah
-                  </span>
-                  <span class="product-icon">☀</span>
-                </div>
-
-                <h3>Umrah Plus Badar</h3>
-
-                <p>
-                  Paket untuk jamaah yang ingin perjalanan ibadah sekaligus
-                  mengenal nilai sejarah Islam dalam rute tambahan.
-                </p>
-
-                <ul>
-                  <li>Harga: dikonfirmasi admin</li>
-                  <li>Seat: perlu dicek sebelum daftar</li>
-                  <li>Cocok untuk: jamaah yang ingin pengalaman historis</li>
-                </ul>
-
-                <a
-                  class="btn btn-primary product-cta"
-                  data-whatsapp
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Tanya Jadwal Badar
-                </a>
-              </article>
-
-              <article class="mitra-product-card">
-                <div class="product-card-top">
-                  <span class="package-status status-check">Cek Jadwal</span>
-                  <span class="product-icon">✦</span>
-                </div>
-
-                <h3>Umrah Plus Dubai</h3>
-
-                <p>
-                  Pilihan untuk jamaah yang ingin perjalanan ibadah dengan
-                  tambahan pengalaman wisata muslim modern.
-                </p>
-
-                <ul>
-                  <li>Harga: dikonfirmasi admin</li>
-                  <li>Jadwal: mengikuti program tersedia</li>
-                  <li>Cocok untuk: jamaah yang ingin rute premium</li>
-                </ul>
-
-                <a
-                  class="btn btn-primary product-cta"
-                  data-whatsapp
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Tanya Jadwal Dubai
-                </a>
-              </article>
-
-              <article class="mitra-product-card">
-                <div class="product-card-top">
-                  <span class="package-status status-check">Cek Seat</span>
-                  <span class="product-icon">◇</span>
-                </div>
-
-                <h3>Umrah Plus Oman</h3>
-
-                <p>
-                  Paket untuk jamaah yang ingin pilihan rute berbeda dengan
-                  suasana perjalanan yang lebih eksklusif.
-                </p>
-
-                <ul>
-                  <li>Harga: dikonfirmasi admin</li>
-                  <li>Seat: dapat berubah sewaktu-waktu</li>
-                  <li>Cocok untuk: jamaah yang mencari variasi rute</li>
-                </ul>
-
-                <a
-                  class="btn btn-primary product-cta"
-                  data-whatsapp
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Tanya Jadwal Oman
-                </a>
-              </article>
+            <div class="mitra-product-grid" data-featured-packages>
+              <div class="notice">Memuat paket pilihan...</div>
             </div>
 
             <div class="availability-note">
@@ -618,9 +359,9 @@
 
               <div>
                 <strong>04. Lanjut resmi</strong>
-                <span
-                  >Pendaftaran mengikuti prosedur penyelenggara berizin.</span
-                >
+                <span>
+                  Pendaftaran mengikuti prosedur penyelenggara berizin.
+                </span>
               </div>
             </div>
           </section>
@@ -920,8 +661,8 @@
           <div>
             <h4>Menu</h4>
             <a href="index.html">Beranda</a>
-            <a href="index.html#paket">Paket Pilihan</a>
-            <a href="paket.html">Katalog Paket</a>
+            <a href="paket.html?q=haji">Info Haji 2026</a>
+            <a href="paket.html?q=umrah">Katalog Umroh</a>
             <a href="kontak.html">Kontak</a>
           </div>
 
@@ -1039,77 +780,6 @@
     <a class="sticky-whatsapp" data-whatsapp target="_blank" rel="noopener">
       💬 Cek Seat & Harga
     </a>
-
-    <!-- SCRIPT BANNER SLIDER -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.querySelector("[data-banner-slider]");
-        if (!slider) return;
-
-        const slides = Array.from(slider.querySelectorAll(".banner-slide"));
-        const dots = Array.from(slider.querySelectorAll("[data-banner-dot]"));
-        const prev = slider.querySelector("[data-banner-prev]");
-        const next = slider.querySelector("[data-banner-next]");
-
-        let current = 0;
-        let timer = null;
-
-        function showSlide(index) {
-          current = (index + slides.length) % slides.length;
-
-          slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === current);
-          });
-
-          dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === current);
-          });
-        }
-
-        function nextSlide() {
-          showSlide(current + 1);
-        }
-
-        function startAutoSlide() {
-          stopAutoSlide();
-          timer = setInterval(nextSlide, 5000);
-        }
-
-        function stopAutoSlide() {
-          if (timer) {
-            clearInterval(timer);
-            timer = null;
-          }
-        }
-
-        if (prev) {
-          prev.addEventListener("click", function () {
-            showSlide(current - 1);
-            startAutoSlide();
-          });
-        }
-
-        if (next) {
-          next.addEventListener("click", function () {
-            showSlide(current + 1);
-            startAutoSlide();
-          });
-        }
-
-        dots.forEach((dot) => {
-          dot.addEventListener("click", function () {
-            showSlide(Number(dot.dataset.bannerDot));
-            startAutoSlide();
-          });
-        });
-
-        slider.addEventListener("mouseenter", stopAutoSlide);
-        slider.addEventListener("mouseleave", startAutoSlide);
-
-        showSlide(0);
-        startAutoSlide();
-      });
-    </script>
 
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
